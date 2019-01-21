@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.4.0-preview">
+  <Workflow xmlns:q1="clr-namespace:;assembly=Extensions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://horizongir.org/bonsai">
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:GenerateDotField">
+          <q1:numDots>100</q1:numDots>
+          <q1:left>-30</q1:left>
+          <q1:right>30</q1:right>
+          <q1:top>30</q1:top>
+          <q1:bottom>-30</q1:bottom>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="WorkflowOutput" />
+      <Expression xsi:type="WorkflowInput">
+        <Name>Source1</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>numDots</MemberName>
+        <Name>numDots</Name>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="q1:GenerateDotLives">
+          <q1:dotLifetime>20</q1:dotLifetime>
+          <q1:numDots>100</q1:numDots>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="Zip" />
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>dotLifetime</MemberName>
+        <Name>dotLifetime</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>Coherence</MemberName>
+        <Name>Coherence</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>VelocityX</MemberName>
+        <Name>VelocityX</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>VelocityY</MemberName>
+        <Name>VelocityY</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>Diameter</MemberName>
+        <Name>Diameter</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>dotLifetimeBool</MemberName>
+        <Name>dotLifetimeBool</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>ColorA</MemberName>
+        <Name>ColorA</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>ColorR</MemberName>
+        <Name>ColorR</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>ColorG</MemberName>
+        <Name>ColorG</Name>
+      </Expression>
+      <Expression xsi:type="ExternalizedProperty">
+        <MemberName>ColorB</MemberName>
+        <Name>ColorB</Name>
+      </Expression>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>Borders</Name>
+      </Expression>
+      <Expression xsi:type="PropertyMapping">
+        <PropertyMappings>
+          <Property name="top" selector="Item1" />
+          <Property name="bottom" selector="Item2" />
+          <Property name="left" selector="Item3" />
+          <Property name="right" selector="Item4" />
+        </PropertyMappings>
+      </Expression>
+      <Expression xsi:type="IncludeWorkflow" Path="Extensions\DrawMovingCircleArray-2d.bonsai">
+        <LocationX>0</LocationX>
+        <LocationY>0</LocationY>
+        <ColorR>1</ColorR>
+        <ColorG>1</ColorG>
+        <ColorB>1</ColorB>
+        <ColorA>1</ColorA>
+        <Diameter>1</Diameter>
+        <VelocityX>-0.5</VelocityX>
+        <VelocityY>0</VelocityY>
+        <Coherence>50</Coherence>
+        <dotLifetime>20</dotLifetime>
+        <dotLifetimeBool>1</dotLifetimeBool>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge>
+        <From>0</From>
+        <To>5</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>3</From>
+        <To>0</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>3</From>
+        <To>4</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>4</From>
+        <To>5</To>
+        <Label>Source2</Label>
+      </Edge>
+      <Edge>
+        <From>5</From>
+        <To>18</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>6</From>
+        <To>18</To>
+        <Label>Source2</Label>
+      </Edge>
+      <Edge>
+        <From>6</From>
+        <To>4</To>
+        <Label>Source2</Label>
+      </Edge>
+      <Edge>
+        <From>7</From>
+        <To>18</To>
+        <Label>Source3</Label>
+      </Edge>
+      <Edge>
+        <From>8</From>
+        <To>18</To>
+        <Label>Source4</Label>
+      </Edge>
+      <Edge>
+        <From>9</From>
+        <To>18</To>
+        <Label>Source5</Label>
+      </Edge>
+      <Edge>
+        <From>10</From>
+        <To>18</To>
+        <Label>Source6</Label>
+      </Edge>
+      <Edge>
+        <From>11</From>
+        <To>18</To>
+        <Label>Source7</Label>
+      </Edge>
+      <Edge>
+        <From>12</From>
+        <To>18</To>
+        <Label>Source8</Label>
+      </Edge>
+      <Edge>
+        <From>13</From>
+        <To>18</To>
+        <Label>Source9</Label>
+      </Edge>
+      <Edge>
+        <From>14</From>
+        <To>18</To>
+        <Label>Source10</Label>
+      </Edge>
+      <Edge>
+        <From>15</From>
+        <To>18</To>
+        <Label>Source11</Label>
+      </Edge>
+      <Edge>
+        <From>16</From>
+        <To>17</To>
+        <Label>Source1</Label>
+      </Edge>
+      <Edge>
+        <From>17</From>
+        <To>0</To>
+        <Label>Source2</Label>
+      </Edge>
+      <Edge>
+        <From>18</From>
+        <To>1</To>
+        <Label>Source1</Label>
+      </Edge>
+    </Edges>
+  </Workflow>
+  <ExtensionTypes>
+    <Type>GenerateDotField, Extensions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>GenerateDotLives, Extensions, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</Type>
+    <Type>Bonsai.Reactive.Zip, Bonsai.Core, Version=2.4.0.0, Culture=neutral, PublicKeyToken=null</Type>
+  </ExtensionTypes>
+</WorkflowBuilder>

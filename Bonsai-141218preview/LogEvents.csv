@@ -1,0 +1,26 @@
+StartSession
+1
+{Id=1, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=20, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
+{Id=0, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=100, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
+{Id=2, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=50, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
+{Id=2, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=50, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
+{Id=1, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=20, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
+{Id=0, Duration=10, Colour1=1, Colour2=0, Contrast=1, numDots1=100, numDots2=100, VelocityX=0, VelocityY=0, Coherence=100, dotLifetime=20, dotLifetimeBool=0, size=1}
+True
+False
+1
